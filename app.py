@@ -891,6 +891,9 @@ with st.form('Health Care Quality Evaluation Form'):
     col45, col46, col47 = st.columns([1, 1, 1])
     with col46:
         submit = st.form_submit_button('Submit Evaluation Data')
+    with col47:
+        st.markdown("<div id='linkto_top'></div>", unsafe_allow_html=True)
+
     if submit:
         try:
             entry = EvalForm(
@@ -1039,5 +1042,3 @@ with st.form('Health Care Quality Evaluation Form'):
             st.balloons()
         except Exception as e:
             st.error("Error while submitting evaluation: {}".format(e))
-
-st.markdown("<div id='linkto_top'></div>", unsafe_allow_html=True)
