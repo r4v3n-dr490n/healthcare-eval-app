@@ -1037,6 +1037,7 @@ with st.form('Health Care Quality Evaluation Form'):
             st.success('Evaluation Data Submitted Successfully!',
                        icon="✅",)
             st.balloons()
-            st.markdown("<div id='linkto_top'></div>", unsafe_allow_html=True)
         except Exception as e:
             st.error("Error while submitting evaluation: {}".format(e))
+
+st.markdown("<div id='linkto_top'></div>", unsafe_allow_html=True)
