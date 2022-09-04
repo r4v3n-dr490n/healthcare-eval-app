@@ -1034,5 +1034,7 @@ with st.form('Health Care Quality Evaluation Form'):
             )
             sess.add(entry)
             sess.commit()
+	    st.success('Evaluation Data Submitted Successfully!', icon:"✅")
+	
         except Exception as e:
             st.error("Error while submitting evaluation: {}".format(e))
