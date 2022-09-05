@@ -20,7 +20,7 @@ html_temp = """
 st.set_page_config(page_title="Healthcare Quality Eval App",
                    page_icon=":bar_chart", layout="wide")
 stc.html(html_temp)
-st.subheader("<p><TT>Supervised By:<a style='text-decoration:nome;color:green' target='_blank'>Dr/ Mostafa Gabr</a<TT></p",unsafe_allow_html=True)
+st.subheader("<p><TT>Supervised By:<a style='text-decoration:nome;color:green'>Dr/ Mostafa Gabr</a<TT></p",unsafe_allow_html=True)
 st.markdown("<p><TT>Designed and Developed by <a style='text-decoration:none;color:red' target='_blank' href='https://github.com/r4v3n-dr490n'>Mohamed A. Atti</a></TT></p>", unsafe_allow_html=True)
 
 
