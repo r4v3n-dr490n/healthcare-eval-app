@@ -19,6 +19,12 @@ html_temp = """
 		"""
 st.set_page_config(page_title="Healthcare Quality Eval App",
                    page_icon=":bar_chart", layout="wide")
+hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
 stc.html(html_temp)
 st.subheader("Supervised By: Dr/ Mostafa Gabr")
 st.markdown("<p><TT>Designed and Developed by <a style='text-decoration:none;color:red' target='_blank' href='https://github.com/r4v3n-dr490n'>Mohamed A. Atti</a></TT></p>", unsafe_allow_html=True)
